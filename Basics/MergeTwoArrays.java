@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Arrays;
 
 public class MergeTwoArrays {
     public static void main(String[] args) {
