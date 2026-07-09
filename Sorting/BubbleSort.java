@@ -1,8 +1,19 @@
+// Bubble Sort - Also called as Sinking Sort / Exchange Sort
+
+// Time Complexity -
+// Best Case - O(n)
+// Worst Case - O(n square)
+
+// Space Complexity - O(1)
+
 import java.util.*;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int arr[] = {5,1,4,3,2};
+//        int arr[] = {1,2,3,4,5};
+//        int arr[] = {5,4,3,2,1};
+        int arr[] = {3,1,5,4,2};
+
         bubbleSort(arr);
         System.out.println(Arrays.toString(arr));
     }
