@@ -1,5 +1,7 @@
 // Bubble Sort - Also called as Sinking Sort / Exchange Sort
 
+// Stable Sort
+
 // Time Complexity -
 // Best Case - O(n)
 // Worst Case - O(n square)
