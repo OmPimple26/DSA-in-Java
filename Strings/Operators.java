@@ -21,6 +21,11 @@ public class Operators {
         System.out.println();
 
         System.out.println(1+"a");
+        System.out.println("a"+'b');
+        System.out.println('a'+"b");
+
+        System.out.println();
+
         System.out.println('a'+3);
         System.out.println((char)('a'+3));
 
