@@ -2,6 +2,8 @@
 
 // Question - Check whether number is even or odd
 
+package bitwise;
+
 public class OddEven {
     public static void main(String[] args) {
         System.out.println(isOdd(50));
