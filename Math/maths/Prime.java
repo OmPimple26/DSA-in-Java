@@ -1,3 +1,6 @@
+// Time Complexity - O(n * sqrt(n))
+// Space Complexity - O(1)
+
 package maths;
 
 public class Prime {

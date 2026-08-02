@@ -1,3 +1,6 @@
+// Total Time Complexity - O(n * log(log(n))
+// Space Complexity - O(n)
+
 package maths;
 
 public class Sieve {
