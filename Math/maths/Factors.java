@@ -2,11 +2,14 @@
 
 package maths;
 
+import java.util.ArrayList;
+
 public class Factors {
     public static void main(String[] args) {
         int n = 40;
 //        factor1(n);  // By using Method 1
-        factor2(n);  // By using Method 2
+//        factor2(n);  // By using Method 2
+        factor3(n);    // By using Method 3
     }
 
     // Method 1
@@ -30,6 +33,25 @@ public class Factors {
                     System.out.print(i + " " + n/i+ " ");
                 }
             }
+        }
+    }
+
+    // Method 3
+    // Here both time and space complexities will be O(sqrt(n))
+    public static void factor3(int n){
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i=1; i<=Math.sqrt(n); i++){
+            if(n%i == 0){
+                if (n / i == i) {
+                    System.out.print(i+" ");
+                }else{
+                    System.out.print(i + " ");
+                    list.add(n/i);
+                }
+            }
+        }
+        for (int i = list.size() - 1; i >= 0; i--) {
+            System.out.print(list.get(i) + " ");
         }
     }
 }
