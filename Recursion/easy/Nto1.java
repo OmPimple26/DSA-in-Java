@@ -5,7 +5,20 @@ public class Nto1 {
 //        fun(5);
 //        funRev(5);
 //        funRevPart2(1);
-        funBoth(5);
+//        funBoth(5);
+        concept(5);
+    }
+
+    // Concept
+    public static void concept(int n) {
+        if (n == 0) {
+            return;
+        }
+
+        System.out.println(n);
+//        concept(n--);
+        concept(--n);
+//        n-- vs --n
     }
 
     // Method 1 - Print n to 1
