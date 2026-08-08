@@ -29,7 +29,10 @@ public class Reverse {
     }
 
     public static void main(String[] args) {
-        rev1(1234);
-        System.out.println(sum);
+//        rev1(1234);
+//        System.out.println(sum);
+
+        int ans = rev2(1234);
+        System.out.println(ans);
     }
 }
