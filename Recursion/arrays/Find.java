@@ -11,10 +11,12 @@ public class Find {
 //        findAllIndex(arr, 4 ,0);
 //        System.out.println(list);
 
-        ArrayList<Integer> list = new ArrayList<>();
-        ArrayList<Integer> ans = findAllIndex1(arr, 4, 0, list);
-        System.out.println(ans);
-        System.out.println(list);
+//        ArrayList<Integer> list = new ArrayList<>();
+//        ArrayList<Integer> ans = findAllIndex1(arr, 4, 0, list);
+//        System.out.println(ans);
+//        System.out.println(list);
+
+        System.out.println(findAllIndex2(arr, 4, 0));
     }
 
     public static boolean find(int[] arr, int target, int index){
@@ -65,5 +67,25 @@ public class Find {
             list.add(index);
         }
         return findAllIndex1(arr, target, index+1, list);
+    }
+
+    public static ArrayList<Integer> findAllIndex2(int[] arr, int target, int index){
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        if(index==arr.length){
+            return list;
+        }
+
+        // this will contain answer for that function call only
+        if(arr[index]==target){
+            list.add(index);
+        }
+
+        ArrayList<Integer> ansFromBelowCalls = findAllIndex2(arr, target, index + 1);
+
+        list.addAll(ansFromBelowCalls);
+
+        return list;
     }
 }
