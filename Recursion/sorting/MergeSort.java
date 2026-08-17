@@ -22,6 +22,10 @@ public class MergeSort {
         return merge(left,right);
     }
 
+    // Method 1 -
+    // Time Complexity - O(NlogN)
+    // Space Complexity - O(N)
+    // where N = number of elements in an array
     public static int[] merge(int[] first, int[] second){
         int[] mix = new int[first.length + second.length];
 
