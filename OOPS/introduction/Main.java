@@ -25,6 +25,10 @@
 // Student student1 -> Occurs at Compile Time
 // new Student() -> Occurs at Run Time
 
+// Constructor defines what happens when an object will be created
+// A constructor in Java is a special block of code used to initialize a newly created object.
+// Constructor is special function, that runs when you create an object and it allocates some variables
+
 
 package introduction;
 
@@ -51,14 +55,20 @@ public class Main {
 //        kunal = new Student();
 
         Student om = new Student();
+        Student soham = new Student();
 
-        om.rno = 33;
-        om.name = "Om Pimple";
-        om.marks = 72.70f;
+//        om.rno = 33;
+//        om.name = "Om Pimple";
+//        om.marks = 72.70f;
 
-        System.out.println(om.rno);
-        System.out.println(om.name);
-        System.out.println(om.marks);
+//        System.out.println(om.rno);
+//        System.out.println(om.name);
+//        System.out.println(om.marks);
+
+        om.greeting();
+
+        om.changeName("Omii");
+        om.greeting();
     }
 
     // Create a class for every single student
@@ -67,5 +77,23 @@ public class Main {
         String name;
         float marks;
 //        float marks = 80;
+
+        // We need a way to add the values of the above properties object by object
+        // We need one word to access every object -> That word is 'this'
+
+        void greeting(){
+//            System.out.println("Hello, my name is "+name);
+            System.out.println("Hello, my name is "+this.name);
+        }
+
+        void changeName(String newName){
+            name = newName;
+        }
+
+        Student(){
+            this.rno = 22;
+            this.name = "Om Pimple";
+            this.marks = 88.5f;
+        }
     }
 }
