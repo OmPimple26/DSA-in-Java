@@ -54,8 +54,8 @@ public class Main {
 //        System.out.println(Arrays.toString(students));
 //        kunal = new Student();
 
-        Student om = new Student();
-        Student soham = new Student();
+//        Student om = new Student();
+//        Student soham = new Student();
 
 //        om.rno = 33;
 //        om.name = "Om Pimple";
@@ -65,10 +65,31 @@ public class Main {
 //        System.out.println(om.name);
 //        System.out.println(om.marks);
 
-        om.greeting();
+//        om.greeting();
+//
+//        om.changeName("Omii");
+//        om.greeting();
 
-        om.changeName("Omii");
-        om.greeting();
+//        Student om = new Student(15, "Om Pimple", 88.5f);
+//        System.out.println(om.rno);
+//        System.out.println(om.name);
+//        System.out.println(om.marks);
+//
+//        Student anushka = new Student(om);
+//        System.out.println(anushka.rno);
+//        System.out.println(anushka.name);
+//        System.out.println(anushka.marks);
+
+//        Student shrushti = new Student();
+//        System.out.println(shrushti.rno);
+//        System.out.println(shrushti.name);
+//        System.out.println(shrushti.marks);
+
+//        Student one = new Student();
+//        Student two = one;
+//
+//        one.name = "Something something";
+//        System.out.println(two.name);
     }
 
     // Create a class for every single student
@@ -90,10 +111,30 @@ public class Main {
             name = newName;
         }
 
+//        Student(){
+//            this.rno = 22;
+//            this.name = "Om Pimple";
+//            this.marks = 88.5f;
+//        }
+
         Student(){
-            this.rno = 22;
-            this.name = "Om Pimple";
-            this.marks = 88.5f;
+            // This is how you call a constructor from another constructor
+            // Internally: new Student(20,"default person", 100.0f);
+            this(20,"default person", 100.0f);
+        }
+
+        // For e.g. Student arpit = new Student(17, "Arpit", 89.7f);
+        // Here this will be replaced with arpit
+        Student(int rno, String name, float marks){
+            this.rno = rno;
+            this.name = name;
+            this.marks = marks;
+        }
+
+        Student(Student other){
+            this.rno = other.rno;
+            this.name = other.name;
+            this.marks = other.marks;
         }
     }
 }
