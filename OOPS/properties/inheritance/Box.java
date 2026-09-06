@@ -1,6 +1,7 @@
 package properties.inheritance;
 
 public class Box {
+//    private double l;
     double l;
     double h;
     double w;
