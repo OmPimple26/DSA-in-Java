@@ -5,6 +5,10 @@
 
 // When a reference to a subclass object is assigned to a superclass variable just like below example you will only be able to access only those parts of the objects that are defined in the superclass
 
+// Whenever a subclass For e.g.BoxWeight needs to refer to the superclass from which it is derived, for that you can use the super keyword
+
+// Super keyword is used to call the superclass constructor
+
 package properties.inheritance;
 
 public class BoxWeight extends Box{
@@ -18,5 +22,7 @@ public class BoxWeight extends Box{
         super(l, h, w);  // Call the parent class constructor
         // Used to initialize values present in the parent class
         this.weight = weight;
+
+//        System.out.println(super.weight);
     }
 }

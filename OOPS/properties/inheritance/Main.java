@@ -1,7 +1,7 @@
 // Inheritance in Java is a core Object-Oriented Programming (OOP) concept that allows one class to acquire the properties (fields) and behaviors (methods) of another class.
 
 // When a reference to a subclass object is assigned to a superclass variable just like below example you will only be able to access only those parts of the objects that are defined in the superclass
-// For e.g.
+// For e.g. Box box6 = new BoxWeight(2,3,4,8);
 
 package properties.inheritance;
 
