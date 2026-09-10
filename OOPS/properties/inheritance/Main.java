@@ -3,6 +3,19 @@
 // When a reference to a subclass object is assigned to a superclass variable just like below example you will only be able to access only those parts of the objects that are defined in the superclass
 // For e.g. Box box6 = new BoxWeight(2,3,4,8);
 
+// Types of inheritance ->
+
+// 1) Single Inheritance:
+// One class extends another class. For e.g. BoxWeight class extends Box class
+
+// 2) Multilevel Inheritance:
+// One class can inherit from a derived class and that derived class can become a parent for another new class
+// For e.g.    Box
+//              |
+//          BoxWeight
+//              |
+//           BoxPrice
+
 package properties.inheritance;
 
 public class Main {
@@ -37,5 +50,8 @@ public class Main {
 //        this is why error
 //        BoxWeight box7 = new Box(2,3,4);
 //        System.out.println(box7.l + " " + box7.w + " " + box7.h + " " + box7.weight);
+
+        BoxPrice box8 = new BoxPrice(5,8,200);
+        System.out.println(box8.l + " " + box8.w + " " + box8.h + " " + box8.weight + " " + box8.cost);
     }
 }
