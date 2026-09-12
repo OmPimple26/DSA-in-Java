@@ -16,6 +16,18 @@
 //              |
 //           BoxPrice
 
+// 3) Multiple Inheritance:
+// When one class is extending more than one classes
+// Java does not support multiple inheritance because if two or more parent classes have same variable or something property then child class will get confused which one to pick
+// It is achieved with the help of interfaces
+
+// 4) Hierarchical Inheritance:
+// One class is inherited by many classes
+
+// 5) Hybrid Inheritance:
+// Combination of single and multiple inheritance
+// Not present in java since multiple inheritance is not supported in java
+
 package properties.inheritance;
 
 public class Main {

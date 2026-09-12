@@ -5,7 +5,7 @@
 
 // When a reference to a subclass object is assigned to a superclass variable just like below example you will only be able to access only those parts of the objects that are defined in the superclass
 
-// Whenever a subclass For e.g.BoxWeight needs to refer to the superclass from which it is derived, for that you can use the super keyword
+// Whenever a subclass (For e.g.BoxWeight) needs to refer to the superclass (For e.g.Box) from which it is derived, for that you can use the super keyword
 
 // Super keyword is used to call the superclass constructor
 
