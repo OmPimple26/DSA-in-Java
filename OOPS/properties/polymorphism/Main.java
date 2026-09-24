@@ -13,7 +13,20 @@
 // A a = new A();
 // A a2 = new A(3,4);
 
-// Java decides which constructor or method to call at compile time hence it is knoen as compile time polymorphism
+// Java decides which constructor or method to call at compile time hence it is known as compile time polymorphism
+
+
+// 2) Runtime / Dynamic Polymorphism ->
+// Achieved by method overriding
+
+// Parent obj = new Child();
+// Here, which method will be called depends on the type of child. This is known as Upcasting.
+// And this entire thing is known as 'How overriding works'
+
+// Reference type define which method to access while object type define which method to run
+
+// How Java determines which method to call at runtime?
+// Answer -> Using Dynamic Method Dispatch (Mechanism by which a call to a overridden method is resolved at runtime rather than compile time)
 
 package properties.polymorphism;
 
