@@ -66,7 +66,11 @@ public class Main {
 //        BoxWeight box7 = new Box(2,3,4);
 //        System.out.println(box7.l + " " + box7.w + " " + box7.h + " " + box7.weight);
 
-        BoxPrice box8 = new BoxPrice(5,8,200);
-        System.out.println(box8.l + " " + box8.w + " " + box8.h + " " + box8.weight + " " + box8.cost);
+//        BoxPrice box8 = new BoxPrice(5,8,200);
+//        System.out.println(box8.l + " " + box8.w + " " + box8.h + " " + box8.weight + " " + box8.cost);
+
+        Box box9 = new Box(4);
+//        box9.greeting();  // Incorrect way of accessing static method
+        Box.greeting();     // Correct way of accessing static method
     }
 }
