@@ -31,6 +31,12 @@
 // final keyword can be used to prevent inheritance in java
 // In Inheritance, whenever we declare any class as final, then all methods inside that class are declared as final
 
+// Static methods can be inherited but cannot be overridden
+
+// Overriding depends on objects, static stuffs does not depend on object hence you can't override static methods
+
+// Overloading and Overriding does not apply to instance variables
+
 package properties.inheritance;
 
 public class Main {
@@ -69,8 +75,11 @@ public class Main {
 //        BoxPrice box8 = new BoxPrice(5,8,200);
 //        System.out.println(box8.l + " " + box8.w + " " + box8.h + " " + box8.weight + " " + box8.cost);
 
-        Box box9 = new Box(4);
-//        box9.greeting();  // Incorrect way of accessing static method
-        Box.greeting();     // Correct way of accessing static method
+//        Box box9 = new Box(4);
+//        box9.greeting();    // Incorrect way of accessing static method
+//        Box.greeting();     // Correct way of accessing static method
+
+        Box box10 = new BoxWeight();
+        box10.greeting();
     }
 }

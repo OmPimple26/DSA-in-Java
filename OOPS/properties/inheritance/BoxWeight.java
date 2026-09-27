@@ -14,6 +14,11 @@ package properties.inheritance;
 public class BoxWeight extends Box{
     double weight;
 
+//    @Override
+    static void greeting(){
+        System.out.println("Hey, I am in BoxWeight class. Greetings!");
+    }
+
     public BoxWeight(){
         this.weight = -1;
     }
