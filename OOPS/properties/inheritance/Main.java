@@ -28,6 +28,9 @@
 // Combination of single and multiple inheritance
 // Not present in java since multiple inheritance is not supported in java
 
+// final keyword can be used to prevent inheritance in java
+// In Inheritance, whenever we declare any class as final, then all methods inside that class are declared as final
+
 package properties.inheritance;
 
 public class Main {

@@ -28,6 +28,13 @@
 // How Java determines which method to call at runtime?
 // Answer -> Using Dynamic Method Dispatch (Mechanism by which a call to a overridden method is resolved at runtime rather than compile time)
 
+// We cannot override anything which is declared as final
+// So final keyword can be used to prevent overriding. It can also be used to prevent inheritance.
+
+// 1. Early Binding (Static Binding)When a method is marked as static, private, or final, its behavior is completely fixed and cannot be overridden by a subclass. Because of this, the compiler knows exactly which method code will run before the program even starts.
+
+// 2. Late Binding (Dynamic Binding)For normal instance methods, Java determines which method to run based on the actual runtime object, not the reference type. This allows Java to achieve runtime polymorphism.
+
 package properties.polymorphism;
 
 public class Main {
