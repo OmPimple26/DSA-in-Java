@@ -11,6 +11,11 @@ public class Box {
         System.out.println("Hey, I am in Box class. Greetings!");
     }
 
+//    Getter method -
+//    public double getL() {
+//        return l;
+//    }
+
     Box () {
         this.h = -1;
         this.l = -1;

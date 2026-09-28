@@ -81,5 +81,8 @@ public class Main {
 
         Box box10 = new BoxWeight();
         box10.greeting();
+
+//        Box box11 = new Box(4.6,7.9,9.9);
+//        System.out.println(box11.getL());
     }
 }
