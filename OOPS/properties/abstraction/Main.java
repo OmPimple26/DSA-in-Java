@@ -12,6 +12,16 @@
 
 // Any class that contains one or more abstract methods must also be declared as abstract
 
+// You can't create objects of an abstract class
+
+// You can't create abstract constructors
+
+// Static methods cannot be overridden. Hence, we can't create abstract static methods
+
+// But we can create static methods in abstract classes
+
+// Abstract classes can contain normal methods too
+
 
 
 //package properties.abstraction;
