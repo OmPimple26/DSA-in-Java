@@ -18,11 +18,28 @@
 
 // In interfaces, we don't have instance variables. The variables are always final and static
 
+// Two classes that are unrelated to each other can also implement the same interface
+
+// We should be careful not to use interfaces casually in performance critical code since it decides which method to call at runtime
+
 
 package interfaces;
 
 public class Main {
     public static void main(String[] args) {
+        Car car = new Car();
 
+        car.start();
+        car.stop();
+        car.acc();
+        car.brake();
+
+
+//        Engine car1 = new Car();
+//        car1.a;                    // Cannot access this
+//        car1.start();
+//        car1.stop();
+//        car1.acc();
+//        car1.brake();              // Cannot access this
     }
 }
