@@ -27,12 +27,12 @@ package interfaces;
 
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
-
-        car.start();
-        car.stop();
-        car.acc();
-        car.brake();
+//        Car car = new Car();
+//
+//        car.start();
+//        car.stop();
+//        car.acc();
+//        car.brake();
 
 
 //        Engine car1 = new Car();
@@ -41,5 +41,9 @@ public class Main {
 //        car1.stop();
 //        car1.acc();
 //        car1.brake();              // Cannot access this
+
+
+        Media carMedia = new Car();
+        carMedia.stop();
     }
 }
