@@ -26,6 +26,18 @@
 
 // But abstract classes still does not solve the problem of multiple inheritance
 
+// From Java 8, it can also contain default methods
+
+// Variables declared in the abstract classes can be both final and non-final
+
+// Abstract class can provide the implementation of interface but interface can't provide the implementation of abstract class
+
+// Abstract class can extend only one java class it cannot perform multiple inheritance
+
+// Members of the java abstract class can be of any type For.eg. public, private, protected, default
+
+// A class can implement more than one interfaces but on the other hand a class can inherit only single super class / abstract class
+
 
 package abstractDemo;
 
