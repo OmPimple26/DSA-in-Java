@@ -22,6 +22,10 @@
 
 // Abstract classes can contain normal methods too
 
+// We can't have abstract class to be as final because we want abstract class to be inherited
+
+// But abstract classes still does not solve the problem of multiple inheritance
+
 
 
 //package properties.abstraction;

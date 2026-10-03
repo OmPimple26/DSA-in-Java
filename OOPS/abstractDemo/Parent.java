@@ -2,9 +2,11 @@ package abstractDemo;
 
 public abstract class Parent {
     int age;
+    final int VALUE;
 
     public Parent(int age) {
         this.age = age;
+        VALUE = 123456789;
     }
 
     static void hello(){
