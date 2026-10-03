@@ -43,7 +43,15 @@ public class Main {
 //        car1.brake();              // Cannot access this
 
 
-        Media carMedia = new Car();
-        carMedia.stop();
+//        Media carMedia = new Car();
+//        carMedia.stop();
+
+
+        NiceCar car2 = new NiceCar();
+
+        car2.start();
+        car2.startMusic();
+        car2.upgradeEngine();
+        car2.start();
     }
 }
