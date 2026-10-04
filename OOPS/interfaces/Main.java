@@ -22,6 +22,8 @@
 
 // We should be careful not to use interfaces casually in performance critical code since it decides which method to call at runtime
 
+// Interfaces can also contain static and default methods
+
 
 package interfaces;
 
