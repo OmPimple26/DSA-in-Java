@@ -10,7 +10,13 @@ public class Student implements Comparable<Student>{
     }
 
     @Override
+    public String toString() {
+        return marks + "";
+    }
+
+    @Override
     public int compareTo(Student o) {
+        System.out.println("In compareTo method");
         int diff = (int)(this.marks - o.marks);
 
         // if diff == 0: means both are equal
