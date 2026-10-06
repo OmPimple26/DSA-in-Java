@@ -31,10 +31,17 @@ public class Main {
 
         try{
             // int c = a/b;
-            divide(a, b);
+            // divide(a, b);
 
             // Just for mimicking
             // throw new Exception("Just for fun");
+
+            String name = "Om";
+            if (name.equals("Om")) {
+                throw new MyException("Name is Om");
+            }
+        }catch (MyException e) {
+            System.out.println(e.getMessage());
         }catch(ArithmeticException e){
             System.out.println(e.getMessage());
         }catch (Exception e) {
@@ -45,10 +52,10 @@ public class Main {
     }
 
     public static int divide(int a, int b) throws ArithmeticException{
-        if (b == 0) {
+        if(b==0){
             throw new ArithmeticException("Please do not divide by zero");
         }
 
-        return  a / b;
+        return a/b;
     }
 }
