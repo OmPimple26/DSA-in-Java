@@ -30,5 +30,9 @@ public class Main {
 
         System.out.println(list.delete(2));
         list.display();
+
+        System.out.println();
+
+        System.out.println(list.find(2));
     }
 }
