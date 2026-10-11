@@ -44,4 +44,22 @@ public class DLL {
         }
         System.out.println("END");
     }
+
+    public void reverse(){
+        Node temp = head;
+        Node last = null;
+
+        while(temp != null){
+            last = temp;
+            temp = temp.next;
+        }
+
+        System.out.println("Printing Linked List in Reverse Order");
+
+        while(last != null){
+            System.out.print(last.val + " -> ");
+            last = last.prev;
+        }
+        System.out.println("START");
+    }
 }

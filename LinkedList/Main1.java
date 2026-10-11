@@ -41,5 +41,6 @@ public class Main1 {
         list1.insertFirst(4);
 
         list1.display();
+        list1.reverse();
     }
 }
