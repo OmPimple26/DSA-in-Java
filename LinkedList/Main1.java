@@ -42,6 +42,8 @@ public class Main1 {
 
         list1.insertLast(5);
 
+        list1.insert(2, 100);
+
         list1.display();
         list1.reverse();
     }
