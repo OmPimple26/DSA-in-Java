@@ -55,5 +55,8 @@ public class Main1 {
         list2.insert(8);
 
         list2.display();
+
+        list2.delete(6);
+        list2.display();
     }
 }
