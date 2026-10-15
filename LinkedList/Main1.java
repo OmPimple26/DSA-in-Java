@@ -48,15 +48,30 @@ public class Main1 {
 //        list1.reverse();
 
 
-        CLL list2 = new CLL();
-        list2.insert(2);
-        list2.insert(4);
-        list2.insert(6);
-        list2.insert(8);
+//        CLL list2 = new CLL();
+//        list2.insert(2);
+//        list2.insert(4);
+//        list2.insert(6);
+//        list2.insert(8);
+//
+//        list2.display();
+//
+//        list2.delete(6);
+//        list2.display();
 
-        list2.display();
 
-        list2.delete(6);
-        list2.display();
+        LL list3 = new LL();
+        list3.insertLast(1);
+        list3.insertLast(1);
+        list3.insertLast(2);
+        list3.insertLast(3);
+        list3.insertLast(3);
+        list3.insertLast(3);
+
+        list3.display();
+        System.out.println();
+        list3.duplicates();
+        System.out.println();
+        list3.display();
     }
 }
