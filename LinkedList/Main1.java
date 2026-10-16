@@ -34,6 +34,7 @@ public class Main1 {
 //        System.out.println(list.find(2));
 
 
+
 //        DLL list1 = new DLL();
 //        list1.insertFirst(1);
 //        list1.insertFirst(2);
@@ -48,6 +49,7 @@ public class Main1 {
 //        list1.reverse();
 
 
+
 //        CLL list2 = new CLL();
 //        list2.insert(2);
 //        list2.insert(4);
@@ -58,6 +60,7 @@ public class Main1 {
 //
 //        list2.delete(6);
 //        list2.display();
+
 
 
 //        LL list3 = new LL();
@@ -75,19 +78,35 @@ public class Main1 {
 //        list3.display();
 
 
-        LL first = new LL();
-        LL second = new LL();
 
-        first.insertLast(1);
-        first.insertLast(3);
-        first.insertLast(5);
+//        LL first = new LL();
+//        LL second = new LL();
+//
+//        first.insertLast(1);
+//        first.insertLast(3);
+//        first.insertLast(5);
+//
+//        second.insertLast(1);
+//        second.insertLast(2);
+//        second.insertLast(9);
+//        second.insertLast(14);
+//
+//        LL ans = LL.merge(first,second);
+//        ans.display();
 
-        second.insertLast(1);
-        second.insertLast(2);
-        second.insertLast(9);
-        second.insertLast(14);
 
-        LL ans = LL.merge(first,second);
-        ans.display();
+
+//          LL list4 = new LL();
+//
+//          list4.insertFirst(1);
+//          list4.insertFirst(2);
+//          list4.insertFirst(3);
+//          list4.insertFirst(4);
+//          list4.insertLast(5);
+//          list4.insert(100, 3);
+//
+//          list4.display();
+//
+//          System.out.println(list4.hasCycle());
     }
 }
