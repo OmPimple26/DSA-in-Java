@@ -60,18 +60,34 @@ public class Main1 {
 //        list2.display();
 
 
-        LL list3 = new LL();
-        list3.insertLast(1);
-        list3.insertLast(1);
-        list3.insertLast(2);
-        list3.insertLast(3);
-        list3.insertLast(3);
-        list3.insertLast(3);
+//        LL list3 = new LL();
+//        list3.insertLast(1);
+//        list3.insertLast(1);
+//        list3.insertLast(2);
+//        list3.insertLast(3);
+//        list3.insertLast(3);
+//        list3.insertLast(3);
+//
+//        list3.display();
+//        System.out.println();
+//        list3.duplicates();
+//        System.out.println();
+//        list3.display();
 
-        list3.display();
-        System.out.println();
-        list3.duplicates();
-        System.out.println();
-        list3.display();
+
+        LL first = new LL();
+        LL second = new LL();
+
+        first.insertLast(1);
+        first.insertLast(3);
+        first.insertLast(5);
+
+        second.insertLast(1);
+        second.insertLast(2);
+        second.insertLast(9);
+        second.insertLast(14);
+
+        LL ans = LL.merge(first,second);
+        ans.display();
     }
 }
