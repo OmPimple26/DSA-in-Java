@@ -210,4 +210,17 @@ public class LL {
     //
     //        return false;
     //    }
+
+
+    // Reverse using Recursion
+    public void reverseUsingRecursion(Node node) {
+        if (node == tail) {
+            head = tail;
+            return;
+        }
+        reverseUsingRecursion(node.next);
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+    }
 }

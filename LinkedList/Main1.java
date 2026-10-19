@@ -108,5 +108,22 @@ public class Main1 {
 //          list4.display();
 //
 //          System.out.println(list4.hasCycle());
+
+
+
+//        LL list5 = new LL();
+//
+//        list5.insertFirst(1);
+//        list5.insertFirst(2);
+//        list5.insertFirst(3);
+//        list5.insertFirst(4);
+//        list5.insertLast(5);
+//        list5.insert(100, 3);
+//
+//        list5.display();
+//        System.out.println();
+//        list5.reverseUsingRecursion(list5.head);
+//        System.out.println();
+//        list5.display();
     }
 }
