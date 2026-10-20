@@ -125,5 +125,22 @@ public class Main1 {
 //        list5.reverseUsingRecursion(list5.head);
 //        System.out.println();
 //        list5.display();
+
+
+
+        LL list6 = new LL();
+
+        list6.insertFirst(1);
+        list6.insertFirst(2);
+        list6.insertFirst(3);
+        list6.insertFirst(4);
+        list6.insertLast(5);
+        list6.insert(100, 3);
+
+        list6.display();
+        System.out.println();
+        list6.reverseInPlace();
+        System.out.println();
+        list6.display();
     }
 }
