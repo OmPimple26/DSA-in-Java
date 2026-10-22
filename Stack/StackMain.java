@@ -1,3 +1,6 @@
+// Time Complexity - O(1) {For all operations push, pop and peek}
+// Space Complexity - O(1) {For all operations push, pop and peek}
+
 public class StackMain {
     public static void main(String[] args) throws StackException{
 //        CustomStack stack = new CustomStack(5);
