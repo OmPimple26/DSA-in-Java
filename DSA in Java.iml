@@ -18,6 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Stack" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Game" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StringBuffer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LargeNumbers" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
