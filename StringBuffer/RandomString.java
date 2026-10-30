@@ -14,6 +14,9 @@ public class RandomString {
     }
 
     public static void main(String[] args) {
-        System.out.println(RandomString.generate(5));
+//        System.out.println(RandomString.generate(5));
+
+        String ans = RandomString.generate(5);
+        System.out.println(ans);
     }
 }

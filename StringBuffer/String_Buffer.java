@@ -8,6 +8,9 @@
 // String Builder is not thread safe. Hence, it is faster
 
 
+import java.text.DecimalFormat;
+import java.util.Arrays;
+
 public class String_Buffer {
     public static void main(String[] args) {
         StringBuffer sb = new StringBuffer();
@@ -45,5 +48,18 @@ public class String_Buffer {
         sb4.reverse();  // reverse
 
         System.out.println(sb4);
+
+
+        // Methods that we can perform on strings:
+        String sentence = "Hi h   hjh  hjkso  siowi     w ";
+        System.out.println(sentence);
+        System.out.println(sentence.replaceAll("\\s", ""));  // remove whitespaces
+
+        String arr = "Kunal,Apoorv,Rahul,Snehal";
+        String[] names = arr.split(",");  // split
+        System.out.println(Arrays.toString(names));
+
+        DecimalFormat df = new DecimalFormat("00.0000");
+        System.out.println(df.format(7.29));  // rounding off
     }
 }
