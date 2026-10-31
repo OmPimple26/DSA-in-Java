@@ -1,15 +1,20 @@
 import java.math.BigInteger;
 
-public class Factorial {
-    public static void main(String[] args) {
-        public static BigInteger fact(int num) {
-            BigInteger ans = new BigInteger("1");
+public class Factorial1 {
+    public static BigInteger fact(int num) {
+        BigInteger ans = new BigInteger("1");
 
-            for (int i=2; i<= num; i++)   {
-                ans = ans.multiply(BigInteger.valueOf(i));
-            }
-
-            return ans;
+        for (int i=2; i<= num; i++)   {
+            ans = ans.multiply(BigInteger.valueOf(i));
         }
+
+        return ans;
+    }
+
+    public static void main(String[] args) {
+//        System.out.println(Factorial1.fact(100));
+
+        BigInteger res = Factorial1.fact(100);
+        System.out.println(res);
     }
 }
