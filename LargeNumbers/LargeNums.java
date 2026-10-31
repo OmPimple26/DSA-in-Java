@@ -21,7 +21,7 @@ public class LargeNums {
         BigInteger A = BigInteger.valueOf(33);
         BigInteger B = BigInteger.valueOf(3456789);  // Converting int/long to BI
         int c = B.intValue(); // Convert BI to int
-        BigInteger C = new BigInteger("23356786634647");
+        BigInteger C = new BigInteger("2335678663464757587474764");
         BigInteger X = new BigInteger("72267364734834");
         System.out.println(C);
 
@@ -41,5 +41,22 @@ public class LargeNums {
         // Multiplication
         BigInteger m = C.multiply(X);
         System.out.println(m);
+
+        // Subtraction
+        BigInteger sub = C.subtract(X);
+        System.out.println(sub);
+
+        // Division
+        BigInteger d = C.divide(X);
+        System.out.println(d);
+
+        // Remainder
+        BigInteger rem = C.remainder(X);
+        System.out.println(rem);
+
+        // Comparison
+        if (X.compareTo(C) < 0) {
+            System.out.println("Yes");
+        }
     }
 }
