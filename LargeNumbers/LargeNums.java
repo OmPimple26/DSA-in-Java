@@ -30,7 +30,10 @@
 // If the number is greater than 0, then Scale = no. of digits to right of decimal point
 // else unscale value = 10 raise to power of -Scale
 
+// --------------------------------------------------------------------------------------------------------
 
+
+import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class LargeNums {
@@ -41,8 +44,26 @@ public class LargeNums {
     public static void BD(){
         double x = 0.03;
         double y = 0.04;
-        double ans = y-x;
+//        double ans = y-x;
+//        System.out.println(ans);
+
+        BigDecimal X = new BigDecimal("0.03");
+        BigDecimal Y = new BigDecimal("0.04");
+        BigDecimal ans = Y.subtract(X);
         System.out.println(ans);
+
+        BigDecimal a = new BigDecimal("456576345675.4546376");
+        BigDecimal b = new BigDecimal("547634565352.986785764");
+
+        // Operations
+        System.out.println(b.add(a));
+        System.out.println(b.subtract(a));
+        System.out.println(b.multiply(a));
+        System.out.println(b.pow(2));
+        System.out.println(b.negate());
+
+        // Constants
+        BigDecimal con = BigDecimal.ONE;
     }
 
     public static void BI(){
