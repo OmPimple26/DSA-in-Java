@@ -19,6 +19,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Game" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StringBuffer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LargeNumbers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FileHandling" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
