@@ -10,11 +10,42 @@
 // Range: -2 raise to the power of Integer.MAX_VALUE  to  +2 raise to the power of Integer.MAX_VALUE
 //                  (exclusive)                                     (exclusive)
 
+// ---------------------------------------------------------------------------------------------------------
+
+// ii) Big Decimal:
+
+// Float and Double (Primitive datatypes) are floating point numbers
+
+// They are stored as a binary representation of a fraction and a power/exponent while other datatypes such as integers are fixed point numbers. This is why they give some error upto (10 raise to power -19)
+
+// But BigDecimal gives the exact answer
+
+//    Object Class
+//        |->java.lang.Number
+//                 |->java.math.BigDecimal
+//                           |->Extends Number class, implements Comparable interface <Big Decimal>
+
+// Range: It contains a random precision int unscaled value and a 32-bit int scale
+
+// If the number is greater than 0, then Scale = no. of digits to right of decimal point
+// else unscale value = 10 raise to power of -Scale
+
 
 import java.math.BigInteger;
 
 public class LargeNums {
     public static void main(String[] args) {
+        BD();
+    }
+
+    public static void BD(){
+        double x = 0.03;
+        double y = 0.04;
+        double ans = y-x;
+        System.out.println(ans);
+    }
+
+    public static void BI(){
         int a = 30;
         int b = 67;
 
