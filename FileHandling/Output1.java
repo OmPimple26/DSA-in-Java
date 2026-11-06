@@ -2,9 +2,9 @@ import java.io.*;
 
 public class Output1 {
     public static void output() {
-        // output
+        // Output
         OutputStream os = System.out;
-        // os.write(😍); // range is exceeded
+        // os.write(😍); // Range is exceeded
 
         try (OutputStreamWriter osw = new OutputStreamWriter(System.out)) {
             osw.write("Hello World");
@@ -19,14 +19,14 @@ public class Output1 {
             System.out.println(e.getMessage());
         }
 
-        try (FileWriter fw = new FileWriter("note.txt", true)) {
-            fw.write("this should be appended");
+        try (FileWriter fw = new FileWriter("FileHandling/note.txt", true)) {
+            fw.write("This should be appended");
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("note.txt"))) {
-            bw.write("Hare Krishna");
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("FileHandling/note.txt"))) {
+            bw.write("Hare Krishna 1");
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
