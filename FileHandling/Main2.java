@@ -27,14 +27,24 @@
 
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class Main2 {
     public static void main(String[] args) {
-        // Create
+        // Create file
         try {
             File fo = new File("FileHandling/new-file.txt");
             fo.createNewFile();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // Write in the file
+        try {
+            FileWriter fw = new FileWriter("FileHandling/new-file.txt");
+            fw.write("सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज, अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुच:");
+            fw.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
