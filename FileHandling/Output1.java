@@ -30,6 +30,17 @@ public class Output1 {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+
+        // Create
+        try {
+            File fo = new File("FileHandling/random.txt");
+            fo.createNewFile();
+            if(fo.delete()) {
+                System.out.println(fo.getName());
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public static void main(String[] args) {

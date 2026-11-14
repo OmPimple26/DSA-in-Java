@@ -26,9 +26,7 @@
 // Scanner in Java is a helper tool (a built-in class) that takes raw data coming from System.in and translates it into easy-to-use types like numbers, words, or full lines of text.
 
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class Main2 {
     public static void main(String[] args) {
@@ -45,6 +43,26 @@ public class Main2 {
             FileWriter fw = new FileWriter("FileHandling/new-file.txt");
             fw.write("सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज, अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुच:");
             fw.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // Reading from a file
+        try (BufferedReader br = new BufferedReader(new FileReader("FileHandling/new-file.txt"))) {
+            while (br.ready()) {
+                System.out.println(br.readLine());
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // Create file
+        try {
+            File fo = new File("FileHandling/random.txt");
+            fo.createNewFile();
+            if(fo.delete()) {
+                System.out.println(fo.getName());
+            }
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
